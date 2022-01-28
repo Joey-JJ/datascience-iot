@@ -12,7 +12,7 @@ def main() -> None:
     GPIO.cleanup()
     
     # Initialising sensor instance
-    instance = dht11.DHT11(pin=4)
+    instance = dht11.DHT11(pin=4)       # CHANGE THE PIN NUMBER IF YOU USE A DIFFERENT PIN
     
     # Creating File and Writing headers
     with open('data.csv', 'w') as file:
