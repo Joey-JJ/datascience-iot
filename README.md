@@ -22,6 +22,7 @@ This project collects data about temperature and air humidity. The data is writt
 ### Step 1: Install Raspberry Pi OS
 Download the 'Raspberry Pi Imager' from https://www.raspberrypi.com/software/. Choose 'Raspberry Pi OS (32-bit) as the Operating System, and choose your micro SD card as 'storage'. Click 'Write' and wait untill the process is done. Insert the SD card into the Raspberry Pi and follow the set up process. Once set up is done, update the OS by entering the following commands into the terminal:
 `sudo apt-get update`
+
 `sudo apt-get upgrade`
 
 ### Step 2: Connect the sensor to the Raspberry Pi
@@ -29,3 +30,4 @@ Download the 'Raspberry Pi Imager' from https://www.raspberrypi.com/software/. C
 As you can see on the picture, the sensor has 3 labelled pins: VCC, DATA and GND. Connect your three jumper cables to the pins. The cable connected to VCC should go to a 5V power output pin (in my case I used a 5V pin, pin number 2). The DATA cable should go to a GPIO pin (I used pin 7) and the GND cable should go to a ground pin (I used pin 6). If everything is connected properly, the LED on the sensor should turn on.
 
 ### Step 3: Install necessary libraries
+The only library needed is the 'dht11' library. Install it by entering the following command into the terminal: ```pip install dht11```.
