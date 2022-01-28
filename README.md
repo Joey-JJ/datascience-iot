@@ -33,13 +33,14 @@ sudo apt-get upgrade
 ![alt](https://github.com/Joey-JJ/datascience-iot/blob/main/assets/dht11_with_cables.jpg)
 As you can see on the picture, the sensor has 3 labelled pins: VCC, DATA and GND. Connect your three jumper cables to the pins. The cable connected to VCC should go to a 5V power output pin (in my case I used a 5V pin, pin number 2). The DATA cable should go to a GPIO pin (I used pin 7) and the GND cable should go to a ground pin (I used pin 6). If everything is connected properly, the LED on the sensor should turn on.
 
+
 ### Step 3: Install necessary libraries
 The only library needed is the 'dht11' library. Install it by entering the following command into the terminal: 
 ```bash
 pip install dht11
 ```
 
-### Step 4: Start coding
+### Step 4: Test the set up
 Open up an IDE to test if everything is set up correctly. You can use the following Python code to test if your sensor is outputting data:
 ```py
 # Necessary imports
@@ -81,3 +82,10 @@ if __name__ == '__main__':
     main()
 ```
 If everything is working correctly, readings should be printed to the console.
+
+### Step 5: Start collecting data
+I modified the code above so it will store each correct reading inside a CSV file. The code will create a CSV file named 'data.csv', and it will store everything there. You can collect data over a period of time, and then stop by hitting 'CTRL/Command + C' on your keyboard. Here is my code:
+```py
+
+```
+An example of the data can be found in the directory 'data' in this repository. There is also an example of the analysis I did on the data.
