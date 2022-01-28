@@ -1,2 +1,3 @@
-# datascience-iot
-Datascience IoT project for school
+# Measure temperature and air humidity with the raspberry pi and DHT11/DHT22
+
+
