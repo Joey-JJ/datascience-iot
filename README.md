@@ -38,3 +38,46 @@ The only library needed is the 'dht11' library. Install it by entering the follo
 ```bash
 pip install dht11
 ```
+
+### Step 4: Start coding
+Open up an IDE to test if everything is set up correctly. You can use the following Python code to test if your sensor is outputting data:
+```py
+# Necessary imports
+import dht11
+import RPi.GPIO as GPIO
+import time
+import datetime
+
+
+def main() -> None:
+    # Setting GPIO settings
+    GPIO.setwarnings(False)
+    GPIO.setmode(GPIO.BCM)
+    GPIO.cleanup()
+  
+    # Initialising sensor instance
+    instance = dht11.DHT11(pin=4)
+
+    try:
+        while True:
+            # Reading values from sensor
+            result = instance.read()
+            # Checking if reading is valid
+            if result.is_valid():
+                # Printing data
+                print(f'Last valid input: {str(datetime.datetime.now())}')
+                print(f'Temperature: {result.temperature}C')
+                print(f'Humidity: {result.humidity}%')
+               
+             # Waiting for 5 seconds to get next reading
+            time.sleep(5)
+
+    except KeyboardInterrupt:
+        print('Cleanup')
+        GPIO.cleanup()
+
+        
+if __name__ == '__main__':
+    main()
+```
+If everything is working correctly, readings should be printed to the console.
