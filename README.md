@@ -56,7 +56,7 @@ def main() -> None:
     GPIO.cleanup()
   
     # Initialising sensor instance
-    instance = dht11.DHT11(pin=4)
+    instance = dht11.DHT11(pin=4) # CHANGE THE PIN NUMBER IF YOU'RE USING A DIFFERENT PIN
 
     try:
         while True:
