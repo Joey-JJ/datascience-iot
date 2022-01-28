@@ -125,3 +125,7 @@ if __name__ == '__main__':
 
 ```
 An example of the data can be found in the directory 'data' in this repository. There is also an example of the analysis I did on the data.
+
+## Sources
+1. https://github.com/szazo/DHT11_Python/blob/master/README.md
+2. https://www.youtube.com/watch?v=KUr8WgSIsfk&t=203s
