@@ -31,11 +31,11 @@ sudo apt-get upgrade
 
 ### Step 2: Connect the sensor to the Raspberry Pi
 ![alt](https://github.com/Joey-JJ/datascience-iot/blob/main/assets/dht11_with_cables.jpg)
-As you can see on the picture, the sensor has 3 labelled pins: VCC, DATA and GND. Connect your three jumper cables to the pins. The cable connected to VCC should go to a 5V power output pin (in my case I used a 5V pin, pin number 2). The DATA cable should go to a GPIO pin (I used pin 7) and the GND cable should go to a ground pin (I used pin 6). If everything is connected properly, the LED on the sensor should turn on (as seen on the first picture).
+As seen on the image above, the sensor has 3 labelled pins: VCC, DATA and GND. Connect your three jumper cables to the pins. The cable connected to VCC should go to a 5V power output pin (in my case I used a 5V pin, pin number 2). The DATA cable should go to a GPIO pin (I used pin 7) and the GND cable should go to a ground pin (I used pin 6). If everything is connected properly, the LED on the sensor should turn on (as seen on the first picture).
 
 
 ### Step 3: Install necessary libraries
-The only library needed is the 'dht11' library. Install it by entering the following command into the terminal: 
+The only required library is the 'dht11' library. Install it by entering the following command into the terminal: 
 ```bash
 pip install dht11
 ```
