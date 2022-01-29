@@ -137,6 +137,7 @@ An example of the data can be found in the directory 'data' in this repository. 
 
 ## Data Pipeline
 ![alt](https://github.com/Joey-JJ/datascience-iot/blob/main/assets/data_pipeline.jpg)
+
 Data is collected by the sensor and saved in a CSV file. To collect the data, send the CSV file to your desired location. Visualize data with your tool of choice.
 
 ## Sources
