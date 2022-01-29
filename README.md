@@ -135,6 +135,10 @@ if __name__ == '__main__':
 ```
 An example of the data can be found in the directory 'data' in this repository. There is also an example of the analysis I did on the data.
 
+## Data Pipeline
+![alt](https://github.com/Joey-JJ/datascience-iot/blob/main/assets/data_pipeline.jpg)
+Data is collected by the sensor and saved in a CSV file. To collect the data, send the CSV file to your desired location. Visualize data with your tool of choice.
+
 ## Sources
 1. https://github.com/szazo/DHT11_Python/blob/master/README.md
 2. https://www.youtube.com/watch?v=KUr8WgSIsfk&t=203s
